@@ -1,9 +1,9 @@
 import React from 'react';
 import {ScrollProviderProps} from './types';
-import ScrollContext from './context';
+import {ScrollContext, useScroll} from './context';
 
-const ScrollProvider = ({children, debug}: ScrollProviderProps) => {
+export const ScrollProvider = ({children, debug}: ScrollProviderProps) => {
   return <ScrollContext children={children} debug={debug} />;
 };
 
-export default ScrollProvider;
+export {useScroll};

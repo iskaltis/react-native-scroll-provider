@@ -7,7 +7,7 @@ const initialState: ScrollState = {
   scrollStates: {},
 };
 
-const ScrollContext = ({
+export const ScrollContext = ({
   children,
   debug = false,
 }: ScrollContextInterface): JSX.Element => {
@@ -25,8 +25,6 @@ const ScrollContext = ({
     </Context.Provider>
   );
 };
-
-export default ScrollContext;
 
 export const useScroll = () => {
   const {state, setState, log} = React.useContext(Context);
