@@ -1,6 +1,6 @@
 {
   "name": "react-native-scroll-provider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Context Provider for tracking state-driven values read from scrolling.",
   "main": "src/provider.tsx",
   "scripts": {
