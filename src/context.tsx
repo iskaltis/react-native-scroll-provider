@@ -37,13 +37,13 @@ export const useScroll = () => {
   };
 
   const setScroll = (key: string, value: boolean) => {
-    setState({
-      ...state,
-      scrollStates: {
-        ...state.scrollStates,
+    setState((prevState: ScrollState) => ({
+      ...prevState,
+      debugStates: {
+        ...prevState.scrollStates,
         [key]: value,
       },
-    });
+    }));
     log(
       `[LOG] ScrollProvider state updated with value: ${value}, key: ${key}.`,
     );
